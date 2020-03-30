@@ -15,6 +15,7 @@ test/sql/ci-*.sql
 libh3-*/
 h3-*.zip
 *.BAK
+/build
 
 # IDEs
 .vscode
