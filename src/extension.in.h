@@ -28,7 +28,7 @@ typedef struct
 #define MAX_H3_RES 15
 
 /*	configure extension version in makefile */
-#define EXTVERSION "@EXTVERSION@"
+#define EXTVERSION "@PROJECT_VERSION@"
 
 /* base type in postgres is Datum, and we cannot fit 8 bytes on all platforms
    so we use pointers */

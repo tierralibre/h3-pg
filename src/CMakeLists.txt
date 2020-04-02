@@ -35,4 +35,5 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 install(
   TARGETS ${PROJECT_NAME}
   DESTINATION ${PostgreSQL_LIBRARY_DIR}
+  COMPONENT extension
 )

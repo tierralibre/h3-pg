@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.11)
 project(simple
-  VERSION 1.2.3
+  VERSION 3.6.1
   LANGUAGES C)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-set(EXT_NAME h3experiment)
+set(EXT_NAME h3)
 
 if (NOT CMAKE_BUILD_TYPE)
     # Default to Release builds
@@ -28,4 +28,5 @@ configure_file(${EXT_CONTROL_FILE} ${EXT_CONTROL_FILE})
 install(
   FILES ${CMAKE_CURRENT_BINARY_DIR}/${EXT_CONTROL_FILE}
   DESTINATION "${PostgreSQL_SHARE_DIR}/extension"
+  COMPONENT extension
 )

@@ -40,7 +40,8 @@ echo -n "build system initialized in ${BUILD_DIR}. To compile, doing:"
 echo -e "\033[1mcd ${BUILD_DIR} && make\033[0m"
 
 #make install
-cmake --build . --target install --config Release
+cmake --build . --config Release
+cmake --install . --component extension
 
 cd ..
 

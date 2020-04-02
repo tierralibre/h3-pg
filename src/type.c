@@ -22,6 +22,20 @@
 #include <h3api.h> // Main H3 include
 #include "extension.h"
 
+PGDLLEXPORT Datum h3index_in(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_out(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_to_bigint(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum bigint_to_h3index(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_eq(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_ne(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_lt(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_le(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_gt(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_ge(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_overlaps(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_contains(PG_FUNCTION_ARGS);
+PGDLLEXPORT Datum h3index_contained_by(PG_FUNCTION_ARGS);
+
 /* conversion */
 PG_FUNCTION_INFO_V1(h3index_in);
 PG_FUNCTION_INFO_V1(h3index_out);
