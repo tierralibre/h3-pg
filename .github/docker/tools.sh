@@ -2,7 +2,7 @@
 set -e
 
 BASEDIR=$(dirname $(realpath "$0"))
-REPOSITORY="docker.pkg.github.com/bytesandbrains/h3-pg"
+REPOSITORY="docker.pkg.github.com/tierralibre/3RM"
 
 cd $BASEDIR
 
